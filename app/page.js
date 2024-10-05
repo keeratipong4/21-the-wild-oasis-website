@@ -1,7 +1,4 @@
 import Link from "next/link";
-export const metadata = {
-  title: "The Wild Oasis",
-};
 
 export default function page() {
   return (
