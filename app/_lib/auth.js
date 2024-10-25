@@ -26,7 +26,7 @@ const authConfig = {
     //since session is created after signIn, therefore the logic to get guest id could not be place inside signIn
     async session({ session, user }) {
       const guest = await getGuest(session.user.email);
-      session.user.gusetId = guest.id;
+      session.user.guestId = guest.id;
       return session;
     },
   },
