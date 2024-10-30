@@ -30,6 +30,8 @@ export async function updateGuest(formData) {
   revalidatePath("/account/profile");
 }
 export async function deleteReservation(bookingId) {
+  // await new Promise((res) => setTimeout(res, 2000));
+  // throw new Error("Manually set the delete to error"); 
   // 1. To make sure user is logged in
   const session = await auth();
   if (!session) throw new Error("You must logged in");
