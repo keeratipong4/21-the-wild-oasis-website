@@ -29,9 +29,37 @@ export async function updateGuest(formData) {
   //5. to revalidate cache
   revalidatePath("/account/profile");
 }
-export async function deleteReservation(bookingId) {
+export async function createBooking(bookingData, formData) {
+  //1). check if user logged in
+  const session = await auth();
+  if (!session) throw new Error("You must be logged in");
+  //2). prepare booking object
+  const newBooking = {
+    ...bookingData,
+    guestId: session.user.guestId,
+    numGuests: Number(formData.get("numGuests")),
+    observations: formData.get("observations").slice(0, 1000),
+    extrasPrice: 0,
+    totalPrice: bookingData.cabinPrice,
+    isPaid: false,
+    hasBreakfast: false,
+    status: "unconfirmed",
+  };
+
+  //3) To insert data on Supabase
+  const { error } = await supabase.from("bookings").insert([newBooking]);
+
+  if (error) {
+    throw new Error("Booking could not be created");
+  }
+  //4). Revalidate
+  revalidatePath(`/cabins/${bookingData.cabinId}`);
+  //5). redirect to thank you page
+  redirect("/cabins/thankyou");
+}
+export async function deleteBooking(bookingId) {
   // await new Promise((res) => setTimeout(res, 2000));
-  // throw new Error("Manually set the delete to error"); 
+  // throw new Error("Manually set the delete to error");
   // 1. To make sure user is logged in
   const session = await auth();
   if (!session) throw new Error("You must logged in");
