@@ -1,4 +1,4 @@
-# The Wild Oasis Client Version 🌲
+# The Wild Oasis 🌲 (for online Customers)
 
 The Wild Oasis Client Version is a web application that allows users to explore and book cozy cabins in a beautiful, remote location. It focuses on delivering a seamless booking experience, offering an intuitive interface and a fast, secure platform for users.
 
@@ -28,13 +28,13 @@ Make sure you have the following installed:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/keeratipong4/17-the-wild-oasis.git
+git clone https://github.com/keeratipong4/21-the-wild-oasis-website.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd the-wild-oasis-customer
+cd 21-the-wild-oasis-website
 ```
 
 3. Install the required dependencies:
