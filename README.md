@@ -1,8 +1,8 @@
 # The Wild Oasis 🌲 (for online guests)
 
-The Wild Oasis (for online guests) is a web application that allows online users to explore and book cabins. This is a demo version for educational purpose based on **The Ultimate Reacty.js** course on **Udemy** by **Jonas Schmedtmann**.
+The Wild Oasis (for online guests) is a web application that allows online users to explore and book cabins. This is a demo version for educational purpose based on [**The Ultimate Reacty.js**](https://shorturl.at/m3qIS) course on **Udemy** by [**Jonas Schmedtmann**](https://www.udemy.com/user/jonasschmedtmann/)
 
-Besides, there is another application with same name also called **The Wild Oasis**, but it's a completely different project made for hotel staff. Click here to visit the other project [**The Wild Oasis (for hotel staff)**](https://wild-oasis-for-employee.vercel.app/)
+Besides, there is another application with same name also called **The Wild Oasis**, but it's a completely different project made for hotel staff to manage the same hotel of this application. Click here to visit the other project [**The Wild Oasis (for hotel staff)**](https://wild-oasis-for-employee.vercel.app/)
 
 ## Features ✨
 
