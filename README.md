@@ -1,6 +1,8 @@
 # The Wild Oasis 🌲 (for online guests)
 
-The Wild Oasis Client Version is a web application that allows users to explore and book cozy cabins in a beautiful, remote location. It focuses on delivering a seamless booking experience, offering an intuitive interface and a fast, secure platform for users.
+The Wild Oasis (for online guests) is a web application that allows online users to explore and book cabins. This is a demo version for educational purpose based on **The Ultimate Reacty.js** course on **Udemy** by **Jonas Schmedtmann**.
+
+Besides, there is another application with same name also called **The Wild Oasis**, but it's a completely different project made for hotel staff. Click here to visit the other project [**The Wild Oasis (for hotel staff)**](https://wild-oasis-for-employee.vercel.app/)
 
 ## Features ✨
 
@@ -8,7 +10,7 @@ The Wild Oasis Client Version is a web application that allows users to explore 
 - Secure Authentication: Users can log in using their Google account via NextAuth for a safe and personalized experience.
 - Quick Booking: The platform provides a straightforward booking process, making it easy to reserve cabins with just a few clicks.
 
-## Tech Stack 🙌
+## Tech Stack🛠️
 
 - <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js" width="30"/> **React.js** provides a smooth, component-based structure, enhancing the user interface and experience.
 - [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/) **Next.js** powers server-side rendering for faster page loads and improved performance.
