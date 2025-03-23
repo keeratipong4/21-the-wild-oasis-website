@@ -1,4 +1,4 @@
-# The Wild Oasis 🌲 (for online Customers)
+# The Wild Oasis 🌲 (for online guests)
 
 The Wild Oasis Client Version is a web application that allows users to explore and book cozy cabins in a beautiful, remote location. It focuses on delivering a seamless booking experience, offering an intuitive interface and a fast, secure platform for users.
 
@@ -10,9 +10,9 @@ The Wild Oasis Client Version is a web application that allows users to explore 
 
 ## Tech Stack 🙌
 
-- React: Provides a smooth, component-based structure, enhancing the user interface and experience.
-- Next.js: Powers server-side rendering for faster page loads and improved performance.
-- NextAuth: Handles secure authentication using Google, ensuring user data is safe and login is easy.
+- <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React.js" width="30"/> **React.js** provides a smooth, component-based structure, enhancing the user interface and experience.
+- [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/) **Next.js** powers server-side rendering for faster page loads and improved performance.
+- <img src="https://next-auth.js.org/img/logo/logo-sm.png" alt="NextAuth.js" width="20"/> **NextAuth.js** handles secure authentication using Google, ensuring user data is safe and login is easy.Handles secure authentication using Google, ensuring user data is safe and login is easy.
 
 ## How to Run the Project
 
@@ -68,4 +68,4 @@ If you’d like to contribute, feel free to submit a pull request or open an iss
 
 ## Social 😃
 
-Connect with me on [LinkedIn](https://www.linkedin.com/in/keeratipong-boonnapongkasem-99259527b/) if you have any questions or just want to chat about web development!
+Connect with me on [my portfolio](https://www.keeratipong.com/)
