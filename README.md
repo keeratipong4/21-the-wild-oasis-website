@@ -23,31 +23,27 @@ This section provides an overview of the key implementations and functionalities
 
 ### 3. Booking System
 
-- Users can book cabins directly through the application.
-- The booking process is streamlined to be quick and user-friendly.
-- Booking data is stored in a mock database for demonstration purposes.
+- Users can reserve cabins directly through the application.
+- Users are able to view, edit or delete all their past and future reservations.
+- The reservation process is streamlined to be quick and user-friendly.
+- Reservation data is stored in a mock database for demonstration purposes.
 
-### 4. Responsive Design
-
-- The application is designed to be fully responsive.
-- It provides an optimal viewing experience across a wide range of devices, from desktop computers to mobile phones.
-
-### 5. Server-Side Rendering
+### 4. Server-Side Rendering
 
 - **Next.js** is used to implement server-side rendering.
 - This improves the performance and SEO of the application by pre-rendering pages on the server.
 
-### 6. State Management
+### 5. State Management
 
 - **React.js** is used for building the user interface.
-- State management is handled using React's built-in hooks such as `useState` and `useEffect`.
+- State management is handled using React's built-in hooks such as `useState` .
 
-### 7. Environment Configuration
+### 6. Environment Configuration
 
 - Environment variables are used to manage sensitive information such as API keys and authentication secrets.
 - A `.env` file is used to store these variables securely.
 
-### 8. Deployment
+### 7. Deployment
 
 - The application is deployed on Vercel.
 - Continuous deployment is set up to automatically deploy changes pushed to the main branch.
