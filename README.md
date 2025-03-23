@@ -4,11 +4,54 @@ The Wild Oasis (for online guests) is a web application that allows online users
 
 Besides, there is another application with same name also called **The Wild Oasis**, but it's a completely different project made for hotel staff to manage the same hotel of this application. Click here to visit the other project [**The Wild Oasis (for hotel staff)**](https://wild-oasis-for-employee.vercel.app/)
 
-## Features ✨
+## Implementation 🛠️
 
-- Browse Cabins: Users can explore available cabins in a remote and scenic location.
-- Secure Authentication: Users can log in using their Google account via NextAuth for a safe and personalized experience.
-- Quick Booking: The platform provides a straightforward booking process, making it easy to reserve cabins with just a few clicks.
+This section provides an overview of the key implementations and functionalities developed in this project.
+
+### 1. User Authentication
+
+- **NextAuth.js** is used to handle user authentication.
+- Users can log in using their Google accounts.
+- Secure authentication ensures user data is protected.
+
+### 2. Cabin Browsing
+
+- Users can browse through a list of available cabins.
+- Each cabin displays detailed information including images, descriptions, and pricing.
+- The cabin data is fetched from a mock API for demonstration purposes.
+
+### 3. Booking System
+
+- Users can book cabins directly through the application.
+- The booking process is streamlined to be quick and user-friendly.
+- Booking data is stored in a mock database for demonstration purposes.
+
+### 4. Responsive Design
+
+- The application is designed to be fully responsive.
+- It provides an optimal viewing experience across a wide range of devices, from desktop computers to mobile phones.
+
+### 5. Server-Side Rendering
+
+- **Next.js** is used to implement server-side rendering.
+- This improves the performance and SEO of the application by pre-rendering pages on the server.
+
+### 6. State Management
+
+- **React.js** is used for building the user interface.
+- State management is handled using React's built-in hooks such as `useState` and `useEffect`.
+
+### 7. Environment Configuration
+
+- Environment variables are used to manage sensitive information such as API keys and authentication secrets.
+- A `.env` file is used to store these variables securely.
+
+### 8. Deployment
+
+- The application is deployed on Vercel.
+- Continuous deployment is set up to automatically deploy changes pushed to the main branch.
+
+This project demonstrates a full-stack web application with a focus on user authentication, booking functionality, and responsive design.
 
 ## Tech Stack🛠️
 
