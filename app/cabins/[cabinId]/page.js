@@ -21,8 +21,20 @@ export async function generateStaticParams() {
 }
 
 export default async function Page({ params }) {
-  //   console.log(params);
-  const cabin = await getCabin(params.cabinId);
+  let cabin;
+  try {
+    cabin = await getCabin(params.cabinId);
+  } catch (err) {
+    return (
+      <div className="mt-10 text-center">
+        <h1 className="text-3xl font-bold mb-4 text-red-500">Debug Error</h1>
+        <p className="text-xl">{err.message}</p>
+        <p className="mt-4 text-gray-400">
+          Supabase URL Present: {process.env.SUPABASE_URL ? "Yes" : "No"}
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div className="max-w-6xl mx-auto mt-8">
