@@ -6,7 +6,7 @@ const authConfig = {
   providers: [
     Google({
       clientId: process.env.AUTH_GOOGLE_ID,
-      clientSecret: process.AUTH_GOOGLE_SECRETE,
+      clientSecret: process.env.AUTH_GOOGLE_SECRET,
     }),
   ],
   callbacks: {
@@ -19,7 +19,8 @@ const authConfig = {
         if (!ExistingGuest)
           await createGuest({ email: user.email, fullName: user.name });
         return true;
-      } catch {
+      } catch (err) {
+        console.error("SignIn Error:", err);
         return false;
       }
     },
