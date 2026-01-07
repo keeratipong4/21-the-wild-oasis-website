@@ -9,16 +9,21 @@ import { Suspense } from "react";
 export const revalidate = 0;
 
 export async function generateMetadata({ params }) {
-  const { name } = await getCabin(params.cabinId);
-  return { title: `Cabin ${name}` };
+  try {
+    const { name } = await getCabin(params.cabinId);
+    return { title: `Cabin ${name}` };
+  } catch (error) {
+    return { title: "Cabin not found" };
+  }
 }
-export async function generateStaticParams() {
-  const cabins = await getCabins();
-  const ids = cabins.map((cabin) => ({
-    cabinId: String(cabin.id),
-  }));
-  return ids;
-}
+
+// export async function generateStaticParams() {
+//   const cabins = await getCabins();
+//   const ids = cabins.map((cabin) => ({
+//     cabinId: String(cabin.id),
+//   }));
+//   return ids;
+// }
 
 export default async function Page({ params }) {
   let cabin;
