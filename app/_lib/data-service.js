@@ -17,7 +17,8 @@ export async function getCabin(id) {
 
   if (error) {
     console.error(error);
-    notFound();
+    // notFound();
+    throw new Error(`Cabin could not be loaded: ${error.message} (${id})`); 
   }
 
   return data;
